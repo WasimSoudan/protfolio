@@ -1,0 +1,14 @@
+[
+  {
+    "role": "Full Stack Developer",
+    "organisation": "icon",
+    "startDate": "March, 2022",
+    "endDate": "Present",
+    "experiences": [
+      "Worked with Google Maps API",
+      "Built and optimized full-stack applications using React and Node.js",
+      "Experience with PostgreSQL and database optimization"
+    ],
+    "imageSrc": "history/icon.png"
+  }
+]
