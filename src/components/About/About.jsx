@@ -9,13 +9,13 @@ export const About = () => {
       <h2 className={styles.title}>About</h2>
       <div className={styles.content}>
         <img
-          src={getImageUrl("about/aboutImage2.png")}
+          src={getImageUrl("about/aboutImage.png")}
           alt="Me sitting with a laptop"
           className={styles.aboutImage}
         />
         <ul className={styles.aboutItems}>
           <li className={styles.aboutItem} >
-            <img src={getImageUrl("about/education3.jpg")} alt="Cursor icon" style={{ marginRight: "5px" }} />
+            <img src={getImageUrl("about/education.jpg")} alt="Cursor icon" style={{ marginRight: "5px" }} />
             <div className={styles.aboutItemText}>
               <h3>Education</h3>
               <p>Master in Computer Science</p>
