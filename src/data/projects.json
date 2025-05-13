@@ -1,7 +1,7 @@
 [
   {
     "title": "Bilad Alcham",
-    "imageSrc": "projects/project.png",
+    "imageSrc": "../../../assets/projects/project.png",
     "description": "This is a project for displaying articles, studies, and books for sale, with a dashboard for sharing research.",
     "skills": ["React", "Bootstrap", "Express", "Node"],
     "demo": "https://www.biladalcham.com/",
