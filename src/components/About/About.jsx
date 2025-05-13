@@ -1,43 +1,61 @@
 import React from "react";
-
 import styles from "./About.module.css";
 import { getImageUrl } from "../../utils";
 
 export const About = () => {
   return (
     <section className={styles.container} id="about">
-      <h2 className={styles.title}>About</h2>
+      <h2 className={styles.title}>About Me</h2>
       <div className={styles.content}>
         <img
           src={getImageUrl("about/aboutImage.png")}
-          alt="Me sitting with a laptop"
+          alt="Professional portrait"
           className={styles.aboutImage}
+          loading="lazy"
         />
         <ul className={styles.aboutItems}>
-          <li className={styles.aboutItem} >
-            <img src={getImageUrl("about/education.jpg")} alt="Cursor icon" style={{ marginRight: "5px" }} />
+          <li className={styles.aboutItem}>
+            <div className={styles.iconContainer}>
+              <img 
+                src={getImageUrl("about/education.jpg")} 
+                alt="Education icon" 
+                className={styles.icon}
+              />
+            </div>
             <div className={styles.aboutItemText}>
               <h3>Education</h3>
               <p>Master in Computer Science</p>
             </div>
           </li>
           <li className={styles.aboutItem}>
-            <img src={getImageUrl("about/cursorIcon.png")} alt="Cursor icon" />
+            <div className={styles.iconContainer}>
+              <img 
+                src={getImageUrl("about/cursorIcon.png")} 
+                alt="Frontend icon" 
+                className={styles.icon}
+              />
+            </div>
             <div className={styles.aboutItemText}>
               <h3>Frontend Developer</h3>
               <p>
-                I'm a frontend developer skilled in creating responsive and
-                high-performance websites.
+                I build responsive, accessible, and high-performance web 
+                applications with modern technologies.
               </p>
             </div>
           </li>
           <li className={styles.aboutItem}>
-            <img src={getImageUrl("about/serverIcon.png")} alt="Server icon" />
+            <div className={styles.iconContainer}>
+              <img 
+                src={getImageUrl("about/serverIcon.png")} 
+                alt="Backend icon" 
+                className={styles.icon}
+              />
+            </div>
             <div className={styles.aboutItemText}>
               <h3>Backend Developer</h3>
               <p>
-                I have experience building efficient and optimized backend
-                systems and APIs.
+                I develop efficient, scalable backend systems and RESTful APIs 
+                with proper security and documentation.
               </p>
             </div>
           </li>
