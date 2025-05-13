@@ -5,21 +5,31 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 61px;
+  padding-top: 2rem;
   z-index: 2;
   margin: 0 10%;
+  width: 80%;
+  box-sizing: border-box;
 }
 
 .title {
-  font-size: 30px;
+  font-size: clamp(1.5rem, 4vw, 2rem);
   font-weight: 600;
   text-decoration: none;
   color: var(--color-text);
+  white-space: nowrap;
 }
-
 
 .menuBtn {
   display: none;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.menuBtn:hover {
+  transform: scale(1.1);
 }
 
 .menu {
@@ -28,55 +38,82 @@
 
 .menuItems {
   display: flex;
-  gap: 47px;
+  gap: clamp(1.5rem, 3vw, 3rem);
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .menuItems a {
-  font-size: 25px;
+  font-size: clamp(1rem, 2vw, 1.5rem);
   color: var(--color-text);
   text-decoration: none;
+  transition: color 0.3s ease;
+  padding: 0.5rem;
+}
+
+.menuItems a:hover {
+  color: var(--color-primary);
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 830px) {
   .navbar {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1.5rem;
+    margin: 0 5%;
+    width: 90%;
   }
 
   .menu {
-    position: absolute;
-    right: 0;
-    margin-right: 10%;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 11px;
-    z-index: 3;
+    position: relative;
+    margin-right: 0;
   }
 
   .menuBtn {
     display: block;
-    cursor: pointer;
+    z-index: 100;
   }
 
   .menuItems {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    max-width: 300px;
+    height: 100vh;
     display: none;
     flex-direction: column;
     align-items: center;
-    gap: 13px;
-    border-radius: 10px;
-    background: rgb(25, 55, 109);
+    justify-content: center;
+    gap: 2rem;
+    background: rgba(25, 55, 109, 0.95);
     background: linear-gradient(
       0deg,
-      rgba(25, 55, 109, 0.2) 0%,
-      rgba(25, 55, 109, 1) 100%
+      rgba(25, 55, 109, 0.9) 0%,
+      rgba(25, 55, 109, 0.95) 100%
     );
-    padding: 24px 33px;
-    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+    padding: 2rem;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
   }
 
   .menuOpen {
     display: flex;
-    z-index: 1;
+    transform: translateX(0);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navbar {
+    padding-top: 1rem;
+  }
+  
+  .menuItems {
+    max-width: 100%;
+    padding: 1rem;
   }
 }
