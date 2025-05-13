@@ -1,6 +1,9 @@
 import React from "react";
 import styles from "./About.module.css";
-import { getImageUrl } from "../../utils";
+import aboutImage from "../../../assets/about/aboutImage.png"
+import education from "../../../assets/about/education.jpg"
+import cursorIcon from "../../../assets/about/cursorIcon.png"
+import serverIcon from '../../../assets/about/serverIcon.png' 
 
 export const About = () => {
   return (
@@ -8,7 +11,7 @@ export const About = () => {
       <h2 className={styles.title}>About Me</h2>
       <div className={styles.content}>
         <img
-          src={getImageUrl("about/aboutImage.png")}
+          src={aboutImage}
           alt="Professional portrait"
           className={styles.aboutImage}
           loading="lazy"
@@ -17,7 +20,7 @@ export const About = () => {
           <li className={styles.aboutItem}>
             <div className={styles.iconContainer}>
               <img 
-                src={getImageUrl("about/education.jpg")} 
+                src={education} 
                 alt="Education icon" 
                 className={styles.icon}
               />
@@ -30,7 +33,7 @@ export const About = () => {
           <li className={styles.aboutItem}>
             <div className={styles.iconContainer}>
               <img 
-                src={getImageUrl("about/cursorIcon.png")} 
+                src={cursorIcon} 
                 alt="Frontend icon" 
                 className={styles.icon}
               />
@@ -46,7 +49,7 @@ export const About = () => {
           <li className={styles.aboutItem}>
             <div className={styles.iconContainer}>
               <img 
-                src={getImageUrl("about/serverIcon.png")} 
+                src={serverIcon} 
                 alt="Backend icon" 
                 className={styles.icon}
               />
