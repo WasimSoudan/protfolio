@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./Contact.module.css";
-import { getImageUrl } from "../../utils";
 import emailIcon from "../../../assets/contact/emailIcon.png"
 import linkedinIcon from "../../../assets/contact/linkedinIcon.png"
 import githubIcon from "../../../assets/contact/githubIcon.png"
