@@ -1,6 +1,9 @@
 import React from "react";
 import styles from "./Contact.module.css";
 import { getImageUrl } from "../../utils";
+import emailIcon from "../../../assets/contact/emailIcon.png"
+import linkedinIcon from "../../../assets/contact/linkedinIcon.png"
+import githubIcon from "../../../assets/contact/githubIcon.png"
 
 export const Contact = () => {
   return (
@@ -13,7 +16,7 @@ export const Contact = () => {
         <ul className={styles.links}>
           <li className={styles.link}>
             <img 
-              src={getImageUrl("contact/emailIcon.png")} 
+              src={emailIcon} 
               alt="Email icon" 
               className={styles.icon}
               loading="lazy"
@@ -24,7 +27,7 @@ export const Contact = () => {
           </li>
           <li className={styles.link}>
             <img
-              src={getImageUrl("contact/linkedinIcon.png")}
+              src={linkedinIcon}
               alt="LinkedIn icon"
               className={styles.icon}
               loading="lazy"
@@ -40,7 +43,7 @@ export const Contact = () => {
           </li>
           <li className={styles.link}>
             <img 
-              src={getImageUrl("contact/githubIcon.png")} 
+              src={githubIcon} 
               alt="GitHub icon" 
               className={styles.icon}
               loading="lazy"

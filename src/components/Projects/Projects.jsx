@@ -3,8 +3,6 @@ import styles from "./Projects.module.css";
 import projects from "../../data/projects";
 import { ProjectCard } from "./ProjectCard";
 export const Projects = () => {
-  console.log(projects);
-  
   return (
     <section className={styles.container} id="projects">
       <h2 className={styles.title}>My Projects</h2>
