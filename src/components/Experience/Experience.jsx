@@ -15,7 +15,7 @@ export const Experience = () => {
             <div key={id} className={styles.skill}>
               <div className={styles.skillImageContainer}>
                 <img 
-                  src={`../../../assets/${getImageUrl(skill.imageSrc)}`} 
+                  src={`${getImageUrl(skill.imageSrc)}`} 
                   alt={skill.title} 
                   loading="lazy"
                 />
