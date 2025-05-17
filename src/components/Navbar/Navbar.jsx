@@ -64,6 +64,9 @@ export const Navbar = () => {
           <li>
             <a href="#contact" onClick={(e) => handleMobileClick(e)}>Contact</a>
           </li>
+          <li>
+            <a href="https://drive.google.com/file/d/1qKi_ehN8XoESJ6fyEW0e79at6fh2grpm/view?usp=drive_link" target="_blank">Resume</a>
+          </li>
         </ul>
       </div>
     </nav>
